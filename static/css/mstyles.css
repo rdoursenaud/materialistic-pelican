@@ -567,13 +567,6 @@ blockquote {
     z-index: 9999;
 }
 
-.mblog .section-spacer {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-}
-
 .mblog .something-else {
     overflow: visible;
     z-index: 10;
