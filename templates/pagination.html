@@ -1,11 +1,11 @@
 {% if DEFAULT_PAGINATION %}
     <div class="mblog__posts mdl-grid">
-        <nav class="m-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+        <nav class="m-nav mdl-cell mdl-cell--12-col">
 
             {% if articles_page.has_next() %}
                 <a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="m-nav__button">
                     <button id="previous-button"
-                            class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--accent mdl-color-text--grey-900"
+                            class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
                             role="presentation">
                         <i class="material-icons">arrow_back</i>
                     </button>
@@ -22,7 +22,7 @@
             {% if articles_page.has_previous() %}
                 <a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="m-nav__button">
                     <button id="next-button"
-                            class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--accent mdl-color-text--grey-900"
+                            class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
                             role="presentation">
                         <i class="material-icons">arrow_forward</i>
                     </button>

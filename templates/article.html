@@ -98,7 +98,7 @@ ll mdl-cell--8-col">
 
                     <div id="share-section" class="mdl-card__menu">
                         <button id="share-button"
-                                class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect mdl-color--white">
+                                class="mdl-button mdl-button--fab mdl-js-button mdl-js-ripple-effect mdl-button--mini-fab">
                             <i class="material-icons" role="presentation">share</i>
                         </button>
 
@@ -120,7 +120,7 @@ ll mdl-cell--8-col">
                 </div>
             </div>
 
-            <nav class="m-nav mdl-color-text--black-50 mdl-cell mdl-cell--12-col">
+            <nav class="m-nav mdl-cell mdl-cell--12-col">
 
                 {% for a in articles %}
                     {% if a == article %}
@@ -128,7 +128,7 @@ ll mdl-cell--8-col">
                         {% if article_index + 1 < articles | count %}
                             <a href="{{ articles[article_index + 1].url }}" class="m-nav__button">
                                 <button id="previous-button"
-                                        class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--accent mdl-color-text--grey-900"
+                                        class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
                                         role="presentation">
                                     <i class="material-icons">arrow_back</i>
                                 </button>
@@ -150,7 +150,7 @@ ll mdl-cell--8-col">
                         {% if article_index - 1 >= 0 %}
                             <a href="{{ articles[article_index - 1].url }}" class="m-nav__button">
                                 <button id="next-button"
-                                        class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--accent mdl-color-text--grey-900"
+                                        class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
                                         role="presentation">
                                     <i class="material-icons">arrow_forward</i>
                                 </button>
