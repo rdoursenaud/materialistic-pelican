@@ -52,11 +52,7 @@ ll mdl-cell--8-col">
 
                             <div class="section-spacer"></div>
 
-                            {% for tag in article.tags %}
-                                <button type="button" class="mdl-chip">
-                                    <a href="{{ SITEURL }}/{{ tag.url }}"><span class="mdl-chip__text">{{ tag }}</span></a>
-                                </button>
-                            {% endfor %}
+                            {% include 'taglist.html' %}
                         </div>
 
                         <div class="mdl-card__supporting-text mdl-color-text--grey-600">

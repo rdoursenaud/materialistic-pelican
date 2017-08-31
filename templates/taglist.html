@@ -1,0 +1,7 @@
+<div class="taglist">
+    {% for tag in article.tags | sort %}
+        <button type="button" class="mdl-chip">
+            <a href="{{ SITEURL }}/{{ tag.url }}"><span class="mdl-chip__text">{{ tag }}</span></a>
+        </button>
+    {% endfor %}
+</div>

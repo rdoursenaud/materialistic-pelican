@@ -34,6 +34,23 @@ ll mdl-cell--8-col">
                                title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
                     </div>
                 {% endif %}
+                <div id="share-section" class="mdl-card__menu">
+                    <button id="share-button"
+                            class="mdl-button mdl-button--fab mdl-js-button mdl-js-ripple-effect mdl-button--mini-fab">
+                        <i class="material-icons" role="presentation">share</i>
+                    </button>
+
+                    {# Tooltip #}
+                    <div class="mdl-tooltip" data-mdl-for="share-button">
+                        Partager
+                    </div>
+
+                    {# Menu #}
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="share-button">
+                        {% include 'share.html' %}
+                    </ul>
+                </div>
 
                 <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
                     <div class="minilogo" style="background-image: url({{ USER_AVATAR_URL }})"></div>
@@ -51,30 +68,7 @@ ll mdl-cell--8-col">
 
                     <div class="section-spacer"></div>
 
-                    {% for tag in article.tags %}
-                        <button type="button" class="mdl-chip">
-                            <a href="{{ SITEURL }}/{{ tag.url }}"><span class="mdl-chip__text">{{ tag }}</span></a>
-                        </button>
-                    {% endfor %}
-
-                    <div id="share-section" class="mdl-card__menu">
-                        <button id="share-button"
-                                class="mdl-button mdl-button--fab mdl-js-button mdl-js-ripple-effect mdl-button--mini-fab">
-                            <i class="material-icons" role="presentation">share</i>
-                        </button>
-
-                        {# Tooltip #}
-                        <div class="mdl-tooltip" data-mdl-for="share-button">
-                            Partager
-                        </div>
-
-                        {# Menu #}
-                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-                            for="share-button">
-                            {% include 'share.html' %}
-                        </ul>
-
-                    </div>
+                    {% include 'taglist.html' %}
                 </div>
 
                 <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
