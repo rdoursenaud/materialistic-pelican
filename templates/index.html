@@ -1,11 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <!--
-    <div class="mblog mdl-layout mdl-js-layout">
-    <main class="mdl-layout__content">
-    <div class="mblog__posts mdl-grid">
-    -->
+{#    <div class="mblog mdl-layout mdl-js-layout">#}
+{#    <main class="mdl-layout__content">#}
+{#    <div class="mblog__posts mdl-grid">#}
 
     <div class="mdl-color--grey mdl-shadow--4dp content mdl-color-text--grey-800 mdl-ce
 ll mdl-cell--8-col">
@@ -29,13 +27,11 @@ ll mdl-cell--8-col">
                             <div>
                                 <abbr class="published"
                                       title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-                                <!--
-                                <address class="vcard author">By
-                                {% for author in article.authors %}
-                                    {{ author }}
-                                {% endfor %}
-                                </address>
-                                -->
+{#                                <address class="vcard author">By#}
+{#                                {% for author in article.authors %}#}
+{#                                    {{ author }}#}
+{#                                {% endfor %}#}
+{#                                </address>#}
                             </div>
                         </div>
 
@@ -57,13 +53,11 @@ ll mdl-cell--8-col">
                             <div>
                                 <abbr class="published"
                                       title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-                                <!--
-                                <address class="vcard author">By
-                                {% for author in article.authors %}
-                                    {{ author }}
-                                {% endfor %}
-                                </address>
-                                -->
+{#                                <address class="vcard author">By#}
+{#                                {% for author in article.authors %}#}
+{#                                    {{ author }}#}
+{#                                {% endfor %}#}
+{#                                </address>#}
                             </div>
                         </div>
 
@@ -86,11 +80,8 @@ ll mdl-cell--8-col">
             {% if articles_page.has_other_pages() %}
                 {% include 'pagination.html' %}
             {% endif %}
-            <!-- </section> /#content -->
-            <!--
-            </div>
-            </main>
-            -->
+{#            </div>#}
+{#            </main>#}
         </div>
     </div>
 {% endblock content %}
