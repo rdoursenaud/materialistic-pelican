@@ -51,6 +51,12 @@ ll mdl-cell--8-col">
 
                     <div class="section-spacer"></div>
 
+                    {% for tag in article.tags %}
+                        <button type="button" class="mdl-chip">
+                            <a href="{{ SITEURL }}/{{ tag.url }}"><span class="mdl-chip__text">{{ tag }}</span></a>
+                        </button>
+                    {% endfor %}
+
                     <div id="share-section" class="mdl-card__menu">
                         <button id="share-button"
                                 class="mdl-button mdl-button--fab mdl-js-button mdl-js-ripple-effect mdl-button--mini-fab">
