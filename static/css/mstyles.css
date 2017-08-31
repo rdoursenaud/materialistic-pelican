@@ -814,3 +814,8 @@ aside {
     margin-right: 40px;
     text-align: right;
 }
+
+/* Make sure share menu is visible, even on short articles */
+.mdl-card {
+    overflow: visible;
+}
