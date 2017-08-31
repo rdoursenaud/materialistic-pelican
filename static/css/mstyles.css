@@ -143,11 +143,6 @@ body .mblog {
     font-weight: 300;
 }
 
-.mdl-card__supporting-text * {
-    font-size: 16px;
-    font-weight: 300;
-}
-
 .mblog .mdl-card__supporting-text strong {
     font-weight: 400;
 }
