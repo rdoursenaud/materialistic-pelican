@@ -60,11 +60,16 @@ ll mdl-cell--8-col">
                         </div>
 
                         <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color--accent mdl-color-text--white"
-                               href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-                               title="Permalink to {{ article.title|striptags }}">
-                                Lire
-                            </a>
+                            <div class="mdl-grid">
+                                <div class="mdl-layout-spacer"></div>
+                                <div>
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color--accent mdl-color-text--white"
+                                       href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+                                       title="Permalink to {{ article.title|striptags }}">
+                                        Lire
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 {% endif %}
