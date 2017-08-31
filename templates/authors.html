@@ -1,13 +1,26 @@
 {% extends "base.html" %}
 
-{% block title %}{{ SITENAME }} - Authors{% endblock %}
+{% block title %}{{ SITENAME }} - Auteurs{% endblock %}
 
 {% block content %}
-    <h1>Authors on {{ SITENAME }}</h1>
+    <div class="mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-ce
+ll mdl-cell--8-col">
+        <div class="mblog__posts mdl-grid">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+                <div class="mdl-card__title mdl-color-text--grey-50 mdl-color--primary">
+                    <h1 class="mdl-color-text--white">Auteurs sur {{ SITENAME }}</h1>
+                </div>
 
-    <ul>
-    {%- for author, articles in authors|sort %}
-        <li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>
-    {% endfor %}
-    </ul>
+                <ul class="mdl-list">
+                    {%- for author, articles in authors|sort %}
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a> ({{ articles|count }})
+                            </span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -32,13 +32,7 @@ while generating content add `-t /some/path/materialistic-pelican` to your comma
 
 Refer [this](https://github.com/getpelican/pelican-themes) and [this](http://docs.getpelican.com/en/3.6.3/settings.html#themes) for more information on using themes. 
 
-## Theme Specific variables 
-
-### CDN
-
-For ease of developing you can use the CDN provided by google for enabling your themes. If the variable is set to false, the attached css and js will be used, you can change or edit them as necessary. 
-
-`USE_CDN = True`
+## Theme Specific variables
 
 ### Colors
 
