@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 
-{#    <div class="mblog mdl-layout mdl-js-layout">#}
-{#    <main class="mdl-layout__content">#}
-{#    <div class="mblog__posts mdl-grid">#}
-
     <div class="mdl-color--grey mdl-shadow--4dp content mdl-color-text--grey-800 mdl-ce
 ll mdl-cell--8-col">
         <div class="mblog__posts mdl-grid">
@@ -26,12 +22,9 @@ ll mdl-cell--8-col">
                             <div class="minilogo" style="background-image: url({{ USER_AVATAR_URL }})"></div>
                             <div>
                                 <abbr class="published"
-                                      title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-{#                                <address class="vcard author">By#}
-{#                                {% for author in article.authors %}#}
-{#                                    {{ author }}#}
-{#                                {% endfor %}#}
-{#                                </address>#}
+                                      title="{{ article.date.isoformat() }}">
+                                    {{ article.locale_date }}
+                                </abbr>
                             </div>
                         </div>
 
@@ -52,12 +45,9 @@ ll mdl-cell--8-col">
                             <div class="minilogo" style="background-image: url({{ USER_AVATAR_URL }})"></div>
                             <div>
                                 <abbr class="published"
-                                      title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-{#                                <address class="vcard author">By#}
-{#                                {% for author in article.authors %}#}
-{#                                    {{ author }}#}
-{#                                {% endfor %}#}
-{#                                </address>#}
+                                      title="{{ article.date.isoformat() }}">
+                                    {{ article.locale_date }}
+                                </abbr>
                             </div>
                         </div>
 
@@ -74,14 +64,13 @@ ll mdl-cell--8-col">
                         </div>
                     </div>
                 {% endif %}
-
             {% endfor %}
 
             {% if articles_page.has_other_pages() %}
                 {% include 'pagination.html' %}
             {% endif %}
-{#            </div>#}
-{#            </main>#}
+
         </div>
     </div>
+
 {% endblock content %}
