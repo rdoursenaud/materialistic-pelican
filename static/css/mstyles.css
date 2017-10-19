@@ -128,7 +128,11 @@ body .mblog {
 }
 
 .mblog .mdl-card__supporting-text table {
+    display: block;
+    overflow-x: auto;
     width: 100%;
+    /* Disable MDL stupid nowrap */
+    white-space: normal;
 }
 
 /*
