@@ -5,7 +5,7 @@ A material theme based on Material Design Lite(from Google) for [Pelican](http:/
 ![](https://github.com/eswarm/materialistic-pelican/blob/master/screenshot.png)
 ![](https://github.com/eswarm/materialistic-pelican/blob/master/screenshots/post.png) 
 
-You can see it live [here](http://eswarm.in)
+You can see it live [here](https://raphael.doursenaud.fr)
 
 Can be customized with a single variable change into 240 colors !!  
 
