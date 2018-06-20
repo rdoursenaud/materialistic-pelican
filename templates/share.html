@@ -2,7 +2,8 @@
     <i class="fa fa-google-plus-square fa-3x"></i>
     <a alt="Google plus"
        href="https://plus.google.com/share?url={{ SITEURL }}/{{ article.url }}"
-       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+       rel="noopener">
         Google+
     </a>
 </li>
@@ -10,7 +11,8 @@
 <li class="mdl-menu__item">
     <i class="fa fa-twitter-square fa-3x"></i>
     <a alt="Twitter"
-       href="https://twitter.com/share?url={{ SITEURL }}/{{ article.url }}&amp;text={{ article.title }}&amp;hashtags={% for tag in article.tags %}{{ tag }}{{ "," if not loop.last }}{% endfor %}"
+       href="https://twitter.com/share?url={{ SITEURL }}/{{ article.url }}&amp;text={{ article.title }}&amp;hashtags={% for tag in article.tags %}{{ tag }}{{ ',' if not loop.last }}{% endfor %}"
+       rel="noopener"
        target="_blank">
         Twitter
     </a>
@@ -20,6 +22,7 @@
     <i class="fa fa-facebook-square fa-3x"></i>
     <a alt="facebook"
        href="http://www.facebook.com/sharer.php?u={{ SITEURL }}/{{ article.url }}"
+       rel="noopener"
        target="_blank">
         Facebook
     </a>
@@ -29,6 +32,7 @@
     <i class="fa fa-linkedin-square fa-3x"></i>
     <a alt="LinkedIn"
        href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ SITEURL }}/{{ article.url }}&amp;title={{ article.title }}"
+       rel="noopener"
        target="_blank">
         LinkedIn
     </a>
@@ -37,7 +41,8 @@
 <li class="mdl-menu__item">
     <i class="fa fa-pinterest-square fa-3x"></i>
     <a alt="Pinterest"
-       href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+       href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"
+       rel="noopener">
         Pinterest
     </a>
 </li>
@@ -46,6 +51,7 @@
     <i class="fa fa-reddit-square fa-3x"></i>
     <a alt="Reddit"
        href="http://reddit.com/submit?url={{ SITEURL }}/{{ article.url }}&amp;title={{ article.title }}"
+       rel="noopener"
        target="_blank">
         Reddit
     </a>
@@ -55,6 +61,7 @@
     <i class="fa fa-tumblr-square fa-3x"></i>
     <a alt="Tumblr"
        href="http://www.tumblr.com/share/link?url={{ SITEURL }}/{{ article.url }}&amp;title={{ article.title }}"
+       rel="noopener"
        target="_blank">
         Tumblr
     </a>
@@ -62,7 +69,10 @@
 
 <li class="mdl-menu__item">
     <i class="fa fa-envelope-square fa-3x"></i>
-    <a alt="Email" href="mailto:?Subject={{ article.title }}&amp;Body={{ SITEURL }}/{{ article.url }}" target="_blank">
+    <a alt="Email"
+       href="mailto:?Subject={{ article.title }}&amp;Body={{ SITEURL }}/{{ article.url }}"
+       rel="noopener"
+       target="_blank">
         Email
     </a>
 </li>
